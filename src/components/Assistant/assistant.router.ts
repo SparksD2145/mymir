@@ -89,7 +89,7 @@ export class AssistantRouter {
           return AssistantRouter.sendResponse(res, 200, `${lookupContact.name}'s ${field} is ${contact[field]}.`);
 
         } else {
-          return AssistantRouter.sendResponse(res, 200, `${lookupContact.name} does not have a vaild ${field} assigned.`)
+          return AssistantRouter.sendResponse(res, 200, `${lookupContact.name} does not have a valid ${field} assigned.`)
         }
       });
   }
@@ -123,7 +123,7 @@ export class AssistantRouter {
     }
 
     ContactsController.getContactByName(contact.name).then(contact => {
-      if (!contact) { return AssistantRouter.sendResponse(res, 404, 'No contact found.')}
+      if (!contact) { return AssistantRouter.sendResponse(res, 404, `I couldn't find a contact by that name.`)}
 
       ContactsController.remove(contact).then(
         () => AssistantRouter.sendResponse(res, 200, 'Contact Removed.'),
