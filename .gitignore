@@ -1,0 +1,9 @@
+# Build folder
+dist
+
+# General ignores
+node_modules
+npm-debug.log
+
+# Ignore SSL certs
+ssl
