@@ -13,7 +13,7 @@ export const BasicAuthConfig = {
 };
 
 export const HTTPConfig = {
-  "defaultPort: 3000
+  "defaultPort": 3000
 };
 
 
