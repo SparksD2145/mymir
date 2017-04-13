@@ -25,7 +25,8 @@ Mymir needs SSL certificates for production deployment. For local development, t
 You will need to import the Mymir agent into your API.ai account and set a fulfillment endpoint for this to work correctly.
 
 
-
+## Video Demonstration
+A video demonstration of the service can be found at: https://youtu.be/2993GLkDqfM
 
 
 
