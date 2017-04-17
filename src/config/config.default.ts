@@ -28,7 +28,7 @@ export const SSLConfig = {
 };
 
 export const SSLOptions = {
-  ca: fs.readFileSync(SSLConfig.ca),
-  cert: fs.readFileSync(SSLConfig.cert),
-  key: fs.readFileSync(SSLConfig.key)
+  ca: fs.existsSync(SSLConfig.ca) ? fs.readFileSync(SSLConfig.ca) : '',
+  cert: fs.existsSync(SSLConfig.cert) ? fs.readFileSync(SSLConfig.cert) : '',
+  key: fs.existsSync(SSLConfig.key) ? fs.readFileSync(SSLConfig.key) : ''
 };
